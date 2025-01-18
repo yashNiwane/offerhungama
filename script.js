@@ -28,4 +28,47 @@ document.addEventListener('DOMContentLoaded', function() {
             navLinks.classList.remove('active');
         }
     });
+
+    // Sticky navbar functionality
+    const nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            nav.classList.add('sticky');
+        } else {
+            nav.classList.remove('sticky');
+        }
+    });
+
+    // Smooth scrolling for navigation links
+    const navLinksList = document.querySelectorAll('.nav-links a'); 
+
+    navLinksList.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default jump
+            const href = this.getAttribute('href');
+
+            if(href.startsWith("#")){
+                 // For internal links (anchors)
+            const targetElement = document.querySelector(href);
+
+            if (targetElement) {
+                // Scroll smoothly to the target element
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close the mobile menu if it's open
+                if (window.innerWidth <= 768) {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                }
+            }
+            } else{
+               // For external links
+               window.location.href = href;
+            }
+           
+        });
+    });
 });
