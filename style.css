@@ -1,0 +1,724 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333; /* Default text color */
+}
+
+.cont {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #0D3278;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.header-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.header-contact p {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-contact i {
+    width: 18px;
+    margin-right: 5px;
+}
+
+/* Navbar */
+nav {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid #F57222;
+}
+
+.nav-links .dropdown {
+    position: relative;
+}
+
+.nav-links .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.nav-links .dropdown-content a {
+    color: #333;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-links .contact-btn {
+    background-color: #F57222;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 5px;
+    border-bottom: none;
+}
+
+.nav-links .contact-btn:hover {
+    background-color: #E5671F;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8f9fa; /* Light background */
+    padding: 60px 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0D3278;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text h1 span {
+    color: #F57222;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background-color: #F57222;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #E5671F;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.quote {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 300px;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: #0D3278;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.cta-section h2 span {
+    color: #F57222;
+}
+
+.cta-section .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-btn {
+    background-color: #F57222;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #E5671F;
+}
+
+.cta-btn.light {
+    background-color: #FFE5D4;
+    color: #333;
+}
+
+/* Details Section */
+.details-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.details-section .split {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically align items */
+    gap: 40px; /* Add space between text and image */
+}
+
+.details-text {
+    flex: 1; /* Text container takes up available space */
+    /* padding-right: 40px; Remove padding to allow full width */
+}
+
+.details-text h2 {
+    font-size: 2rem;
+    color: #0D3278;
+    margin-bottom: 20px;
+}
+
+.details-text p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.details-image {
+    flex: 1; /* Image container takes up available space */
+    text-align: center; /* Center the image */
+}
+
+.details-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    /* ... other responsive styles ... */
+
+    .details-section .split {
+        flex-direction: column; /* Stack text and image vertically on smaller screens */
+    }
+}
+/* Why Choose Section */
+.why-choose-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.offerhungama-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.offerhungama-container h2 {
+    font-size: 2rem;
+    color: #0D3278;
+    margin-bottom: 20px;
+}
+
+.offerhungama-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.offerhungama-benefits-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.offerhungama-benefit {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offerhungama-benefit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.offerhungama-benefit i {
+    font-size: 2rem;
+    color: #F57222;
+    margin-bottom: 15px;
+}
+
+.offerhungama-benefit h6 {
+    font-size: 1.2rem;
+    color: #0D3278;
+    margin-bottom: 10px;
+}
+
+.offerhungama-benefit p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.offerhungama-separator {
+    margin: 0 20px;
+    align-self: center;
+}
+
+/* Benefits Card Section */
+.benefits-section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Space between cards */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 2rem; /* Space between each card */
+    width: 100%; /* Make cards take up full width */
+    /* Limit the maximum width of the cards */
+}
+
+.card {
+    display: flex;
+    flex-direction: row; /* Align image and text in the same row */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-inner {
+    display: flex;
+    flex-direction: row; /* Keep image and text in a single row */
+    align-items: center;
+    width: 100%;
+}
+
+.card-image {
+    max-width: 283px;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+    text-align: left;
+    flex: 1; /* Take up the remaining space */
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+ul {
+    margin: 0;
+    padding: 0 0 0 1rem;
+    list-style-type: disc;
+    font-size: 1rem;
+    color: #666;
+}
+
+.apply-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #F57222;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+    background-color: #ef6916;
+}
+.split1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    color: #0D3278;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    color: #0D3278;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-info i {
+    color: #F57222;
+    margin-right: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #0D3278;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #F57222;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.submit-btn {
+    background-color: #0D3278;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0a2558;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image::before {
+        width: 100%;
+        height: 50%;
+        border-radius: 50% 50% 0 0;
+    }
+
+    .quote {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+    }
+
+    .details-section {
+        padding: 40px 0;
+    }
+
+    .details-text {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .details-image {
+        text-align: center;
+    }
+
+    .offerhungama-benefits-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offerhungama-separator {
+        display: none;
+    }
+
+    .offerhungama-benefit {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .card-container {
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .cont {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .header-contact {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px 0;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links .dropdown-content {
+        position: static;
+        box-shadow: none;
+        margin-top: 10px;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .bottom-section .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cont {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .cta-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .details-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .offerhungama-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.5rem;
+    }
+}
